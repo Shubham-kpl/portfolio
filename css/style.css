@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
 :root {
     --color-body: #b6cbce;
     --color-heading: #eef3db;
@@ -11,6 +14,7 @@
 body {
     background-color: var(--color-base2);
     color: var(--color-body);
+    font-family: "Rubik";
 }
 
 h1,
@@ -29,7 +33,7 @@ a {
 }
 
 a:hover {
-    color: var(--color-brand) !important;
+    color: var(--color-brand);
 }
 
 img {
@@ -99,18 +103,21 @@ img {
 }
 
 .btn {
-    padding: 12px 28px;
+    padding: 10px 28px;
     font-weight: 700;
 }
 
-.btn-brand {
+.btn-brand,
+.btn-brand a {
     background-color: var(--color-brand);
     color: var(--color-base);
     border-color: var(--color-brand);
 }
 
 .btn-brand:hover,
-.btn-brand:active {
+.btn-brand:active,
+.btn-brand a:hover,
+.btn-brand a:active {
     background-color: var(--color-brand2);
     color: var(--color-base);
     border-color: var(--color-brand2);
@@ -119,7 +126,7 @@ img {
 .link-custom {
     font-weight: 700;
     position: relative;
-    display: inline;
+    display: inline-block;
 }
 
 .link-custom::after {
@@ -129,7 +136,7 @@ img {
     height: 2px;
     background-color: var(--color-brand);
     left: 0;
-    top: 100%;
+    top: 110%;
     transition: all 0.4s;
 }
 
@@ -196,4 +203,8 @@ img {
     background-color: var(--color-base);
     border-radius: 100px;
     font-size: 24px;
+}
+
+.intro--image {
+    height: 50px;
 }

@@ -1,3 +1,4 @@
+"use strict";
 AOS.init();
 
 // You can also pass an optional settings object

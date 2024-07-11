@@ -3,10 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website - Shubham Kandpal</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="./style.css" />
+    <title>Shubham Kandpal Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
 
     <!-- Bootstrap -->
     <link
@@ -15,131 +13,499 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Animations @https://github.com/michalsnik/aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
-  <body>
-    <nav class="nav navbar navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a href="#" class="nav--title navbar-brand">shubham.</a>
+
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container flex-lg-column">
+        <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+          <span class="h3 fw-bold d-block d-lg-none">Shubham Kandpal</span>
+          <img
+            src="./images/image1.jpg"
+            class="d-none d-lg-block rounded-circle"
+            alt="person--photo"
+          />
+        </a>
 
         <button
-          class="navbar-toggler nav--toggler"
+          class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav nav--items">
-            <li class="nav-item nav--item">
-              <a href="/" class="nav-link">Home</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">
+                Home
+              </a>
             </li>
-            <li class="nav-item nav--item">
-              <a href="#section--about" class="nav-link">About</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
             </li>
-            <li class="nav-item nav--item">
-              <a href="#section--projects" class="nav-link">Projects</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
-            <li class="nav-item nav--item">
-              <a href="#section--contact" class="nav-link">Contact</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="intro--container">
-      <img src="images/1.jpg" class="intro--image" alt="" />
-      <div class="intro--text">
-        Hi! <br />
-        I'm a <br />
-        Web <br />
-        Developer
-      </div>
-    </div>
 
-    <div class="section--about" id="section--about">
-      <img src="images/image.jpg" class="image--about" />
-
-      <p class="about--text">
-        I am a Frontend Web Developer based in Haldwani, India <br />
-
-        I specialize in creating elegant and intuitive designs that helps in
-        making a significant impact in the digital landscape. My expertise in
-        DevOps allows me to seamlessly integrate development and operations,
-        ensuring efficient and reliable delivery of cutting-edge solutions.
-      </p>
-    </div>
-
-    <center><h1>Projects</h1></center>
-    <div class="section--projects" id="section--projects">
-      <div class="card card--projects">
-        <img
-          src="./images/mapty-app-project.png"
-          class="card-img-top"
-          alt="Mapty App"
-        />
-        <div class="card-body">
-          <center><h5 class="card-title">Card title</h5></center>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+    <!-- Content -->
+    <div id="content-wrapper">
+      <!-- Home -->
+      <section id="home" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <h1 class="display-4 fw-bold" data-aos="fade-up">
+                I'M A <span class="text-brand"> WEB DEVELOPER </span>
+                FROM HALDWANI, INDIA
+              </h1>
+              <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="200">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias
+                nam aut veritatis quasi aperiam adipisci laborum mollitia nemo
+                laudantium dolorum.
+              </p>
+              <div data-aos="fade-up" data-aos-delay="300">
+                <a href="#projects" class="btn btn-brand me-3">Projects</a>
+                <a href="#" class="link-custom">Contact me: +91-9193560650</a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="card card--projects">
-        <img
-          src="./images/mapty-app-project.png"
-          class="card-img-top"
-          alt="Mapty App"
-        />
-        <div class="card-body">
-          <center><h5 class="card-title">Card title</h5></center>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row pb-4">
+            <div class="col-lg-8">
+              <h6 class="text-brand">ABOUT ME</h6>
+              <h1>My qualifications and experiences</h1>
+            </div>
+          </div>
+          <div class="row gy-5">
+            <div class="col-lg-6">
+              <h3 class="mb-4" data-aos="fade-up" data-aos-delay="200">
+                Education
+              </h3>
+              <div class="row gy-4">
+                <div class="col-12" data-aos="fade-up" data-aos-delay="400">
+                  <div class="bg-base p-4 pe-5 rounded-3 shadow-effect">
+                    <h4>Bachelor of Technology</h4>
+                    <div class="row">
+                      <p class="text-brand mb-3 col-11">
+                        College of Technology, Pantnagar (2021 - Present)
+                      </p>
+                      <span class="col-1">8.043</span>
+                    </div>
+                    <p class="mb-0">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Vel, eius eaque a quia corporis quo natus impedit nostrum
+                      omnis sint?
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                  <div class="bg-base p-4 pe-5 rounded-3 shadow-effect">
+                    <h4>Intermediate</h4>
+                    <div class="row">
+                      <p class="text-brand mb-3 col-11">
+                        Kendriya Vidyalaya, Pithoragarh (2021)
+                      </p>
+                      <span class="col-1">96%</span>
+                    </div>
+
+                    <p class="mb-0">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Vel, eius eaque a quia corporis quo natus impedit nostrum
+                      omnis sint?
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12" data-aos="fade-up" data-aos-delay="800">
+                  <div class="bg-base p-4 pe-5 rounded-3 shadow-effect">
+                    <h4>Highschool</h4>
+                    <div class="row">
+                      <p class="text-brand mb-3 col-11">
+                        The Asian Academy, Pithoragarh (2019)
+                      </p>
+                      <span class="col-1">90.8%</span>
+                    </div>
+                    <p class="mb-0">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Vel, eius eaque a quia corporis quo natus impedit nostrum
+                      omnis sint?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h3 class="mb-4" data-aos="fade-up" data-aos-delay="200">
+                Experiences
+              </h3>
+              <div class="row gy-4">
+                <div class="col-12" data-aos="fade-up" data-aos-delay="400">
+                  <div class="bg-base p-4 pe-5 rounded-3 shadow-effect">
+                    <h4>Web Development Intern</h4>
+                    <p class="text-brand mb-3">
+                      Pal Motors, Haldwani (July 2023 - Aug 2023)
+                    </p>
+                    <p class="mb-0">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Vel, eius eaque a quia corporis quo natus impedit nostrum
+                      omnis sint?
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                  <div class="bg-base p-4 pe-5 rounded-3 shadow-effect">
+                    <h4>Web Development Intern</h4>
+                    <p class="text-brand mb-3">
+                      Bajrang Motors (July 2022 - Aug 2022)
+                    </p>
+                    <p class="mb-0">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Vel, eius eaque a quia corporis quo natus impedit nostrum
+                      omnis sint?
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12" data-aos="fade-up" data-aos-delay="800">
+                  <div class="bg-base p-4 pe-5 rounded-3 shadow-effect">
+                    <h4>Web Development Trainee</h4>
+                    <p class="text-brand mb-3">
+                      Coincent.ai (Jan 2022 - Apr 2022)
+                    </p>
+                    <p class="mb-0">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Vel, eius eaque a quia corporis quo natus impedit nostrum
+                      omnis sint?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="card card--projects">
-        <img
-          src="./images/mapty-app-project.png"
-          class="card-img-top"
-          alt="Mapty App"
-        />
-        <div class="card-body">
-          <center><h3 class="card-title">Card title</h3></center>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row pb-4">
+            <div class="col-lg-8">
+              <h6 class="text-brand">SKILLS</h6>
+              <h1>Technologies that I use</h1>
+            </div>
+          </div>
+          <div class="row pb-4">
+            <div class="col-md-4 mb-4">
+              <div
+                class="service p-4 cursor-pointer bg-base rounded-3 shadow-effect"
+                data-aos="fade-up"
+              >
+                <div class="iconbox rounded-3">
+                  <i class="fa-brands fa-html5"></i>
+                </div>
+                <h5 class="mt-4 mb-2">HTML</h5>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Corporis, optio.
+                </p>
+                <span><a href="#" class="link-custom">Read More</a></span>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div
+                class="service p-4 cursor-pointer bg-base rounded-3 shadow-effect"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="iconbox rounded-3">
+                  <i class="fa-brands fa-css3"></i>
+                </div>
+                <h5 class="mt-4 mb-2">CSS</h5>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Corporis, optio.
+                </p>
+                <a href="#" class="link-custom">Read More</a>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div
+                class="service p-4 cursor-pointer bg-base rounded-3 shadow-effect"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <div class="iconbox rounded-3">
+                  <i class="fa-brands fa-js"></i>
+                </div>
+                <h5 class="mt-4 mb-2">Javascript</h5>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Corporis, optio.
+                </p>
+                <a href="#" class="link-custom">Read More</a>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div
+                class="service p-4 cursor-pointer bg-base rounded-3 shadow-effect"
+                data-aos="fade-up"
+              >
+                <div class="iconbox rounded-3">
+                  <i class="fa-brands fa-react"></i>
+                </div>
+                <h5 class="mt-4 mb-2">React JS</h5>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Corporis, optio.
+                </p>
+                <a href="#" class="link-custom">Read More</a>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div
+                class="service p-4 cursor-pointer bg-base rounded-3 shadow-effect"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="iconbox rounded-3">
+                  <i class="fa-brands fa-node"></i>
+                </div>
+                <h5 class="mt-4 mb-2">Node JS</h5>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Corporis, optio.
+                </p>
+                <a href="#" class="link-custom">Read More</a>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div
+                class="service p-4 cursor-pointer bg-base rounded-3 shadow-effect"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <div class="iconbox rounded-3">
+                  <i class="fa-brands fa-bootstrap"></i>
+                </div>
+                <h5 class="mt-4 mb-2">Bootstrap</h5>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Corporis, optio.
+                </p>
+                <a href="#" class="link-custom">Read More</a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row pb-4">
+            <div class="col-lg-8">
+              <h6 class="text-brand">PROJECTS</h6>
+              <h1>My Recent Projects</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 gy-4">
+              <div
+                class="card-custom rounded-3 bg-base shadow-effect"
+                data-aos="fade-up"
+              >
+                <div class="card-custom-image">
+                  <img
+                    src="images/mapty-app-project.png"
+                    alt="mapty-app-project"
+                  />
+                </div>
+                <div class="card-custom-content p-4">
+                  <h4>Mapty App Project</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolor, quas ea! Ipsam, quo illo fugiat voluptatum beatae
+                    expedita itaque. Quia. Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Labor
+                  </p>
+                  <a href="#" class="link-custom">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 gy-4">
+              <div
+                class="card-custom rounded-3 bg-base shadow-effect"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="card-custom-image">
+                  <img
+                    src="images/basic-ecommerce-website.png"
+                    alt="basic-ecommerce-website"
+                  />
+                </div>
+                <div class="card-custom-content p-4">
+                  <h4>Basic Ecommerce Website</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque optio ex magnam! Deserunt vel, laudantium adipisci
+                    neque hic iste fugiat possimus unde doloremque
+                  </p>
+                  <a href="#" class="link-custom">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 gy-4">
+              <div
+                class="card-custom rounded-3 bg-base shadow-effect"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="card-custom-image">
+                  <img src="images/todoapp.png" alt="to-do-app" />
+                </div>
+                <div class="card-custom-content p-4">
+                  <h4>To Do App</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque optio ex magnam! Deserunt vel, laudantium adipisci
+                    neque hic iste fugiat possimus unde doloremque
+                  </p>
+                  <a href="#" class="link-custom">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-8 pb-4">
+              <h6 class="text-brand">CONTACT</h6>
+              <h1>
+                Have an idea in mind? <br />
+                Let's build together!
+              </h1>
+            </div>
+
+            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+              <form action="" class="row g-lg-3 gy-3">
+                <div class="form-group col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <div class="form-group col-md-12">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter subject"
+                  />
+                </div>
+                <div class="form-group col-md-12">
+                  <textarea
+                    name=""
+                    rows="4"
+                    class="form-control"
+                    placeholder="Enter your message"
+                  ></textarea>
+                </div>
+                <div class="form-group col-md-12 d-grid">
+                  <button class="btn btn-brand" type="submit">
+                    Contact Me
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="py-5 px-lg-5">
+        <div class="container">
+          <div class="row gy-4 justify-content-between align-items-center">
+            <div class="col-auto">
+              <p>Copyright &copy; 2024. All Rights Reserved.</p>
+            </div>
+            <div class="col-auto">
+              <div class="social-icons">
+                <a href="https://x.com/explorewithsk27"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/shubhamkandpal27/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/Shubham-kpl/"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-    <div class="section--contact" id="section--contact">
-      <img src="images/image.jpg" />
 
-      <p class="contact--text">
-        I am a Frontend Web Developer based in Haldwani, India <br />
-
-        I specialize in creating elegant and intuitive designs that helps in
-        making a significant impact in the digital landscape. My expertise in
-        DevOps allows me to seamlessly integrate development and operations,
-        ensuring efficient and reliable delivery of cutting-edge solutions.
-      </p>
-    </div>
-
-    <!-- Bootstrap JS -->
+    <!-- Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <!-- JS -->
+    <script src="./js/script.js"></script>
+
+    <!-- Animations @https://github.com/michalsnik/aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
