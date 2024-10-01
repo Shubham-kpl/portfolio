@@ -208,3 +208,7 @@ img {
 .intro--image {
     height: 50px;
 }
+
+.hidden {
+    display: none;
+}
