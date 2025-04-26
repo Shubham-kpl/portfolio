@@ -14,9 +14,9 @@
 - fetch college result from college website itself
 - fetch copyright year in js
 
-<img src = "./images/this_project/1.png">
-<img src = "./images/this_project/2.png">
-<img src = "./images/this_project/3.png">
+<img src = "./src/images/this_project/1.png">
+<img src = "./src/images/this_project/2.png">
+<img src = "./src/images/this_project/3.png">
 
 # Features
 
