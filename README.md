@@ -11,9 +11,9 @@
 - Collect login data and footer form data in mongodb
 - Create a `blogs` route and link it to your `blogging website`
 
-<img src = "./images/project/1.png">
-<img src = "./images/project/2.png">
-<img src = "./images/project/3.png">
+<img src = "./images/this_project/1.png">
+<img src = "./images/this_project/2.png">
+<img src = "./images/this_project/3.png">
 
 # Features
 
