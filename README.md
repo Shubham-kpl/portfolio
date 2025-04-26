@@ -4,9 +4,9 @@
 
 - Create own MVC architecture (forkify reference)
 - Update text and photo
-- Writing something in about section ✅
+- ✅ Writing something in about section
 - Smooth Transition Everywhere
-- Remove false trainings ✅
+- ✅ Remove false trainings
 - Change "Read more" with '...', clicking on which, it opens rest of text
 - Close nav toggler upon clicking anywhere (not only just on the toggler)
 - Change copyright year dynamically from js
@@ -21,6 +21,6 @@
 
 # Features
 
-- Fully responsive website ✅
-- Uses CSS animations ✅
-- Multiple sections ✅
+- ✅ Fully responsive website
+- ✅ Uses CSS animations
+- ✅ Multiple sections
