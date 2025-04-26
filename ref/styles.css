@@ -1,0 +1,131 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background: linear-gradient(to right, #007bff, #6610f2);
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#about img {
+    width: 100%;
+    max-width: 300px;
+    animation: slideIn 1.5s;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+#projects .card {
+    transition: transform 0.3s;
+}
+
+#projects .card:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+}
+
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    /* font-family: url('./Roboto-Regular.ttf'), "Open Sans"; */
+    font-family: 'Roboto', sans-serif;
+}
+
+body ul li {
+    display: inline !important;
+}
+
+.nav--title {
+    margin-left: 2rem;
+}
+
+.nav--toggler {
+    margin-right: 2rem;
+}
+
+.nav--items {
+    margin-left: 3rem;
+}
+
+.section--about,
+.section--projects,
+.section--contact {
+    display: flex;
+    padding: 1rem 3rem;
+    align-items: center;
+}
+
+.section--projects {
+    justify-content: space-between;
+    margin: auto 5%;
+}
+
+.card--projects {
+    width: 30%;
+}
+
+.section--projects img {
+    width: 100%;
+}
+
+.section--about .about--text,
+.section--projects .projects--text,
+.section--contact .contact--text {
+    font-size: 30px;
+    margin-left: 4rem;
+    width: 50%;
+}
+
+
+::selection {
+    background: black;
+    color: white;
+}
+
+.intro--container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    position: relative;
+}
+
+.intro--image {
+    width: 70%;
+}
+
+.intro--text {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    font-size: xx-large;
+}
+
+.image--about {
+    width: 30%;
+    height: auto;
+    margin-left: 5%;
+}

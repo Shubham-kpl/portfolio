@@ -212,3 +212,7 @@ img {
 .hidden {
     display: none;
 }
+
+.grades {
+    font-size: 2rem;
+}

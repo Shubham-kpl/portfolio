@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shubham Kandpal's Portfolio</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Shubham Kandpal</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-5">
+      <div class="container">
+        <h1>Welcome to My Portfolio</h1>
+        <p class="lead">Showcasing my projects and skills</p>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>About Me</h2>
+            <p>I am a Frontend Web Developer based in Haldwani, India.</p>
+            <p>
+              I specialize in creating elegant and intuitive designs that helps
+              in making a significant impact in the digital landscape. My
+              expertise in DevOps allows me to seamlessly integrate development
+              and operations, ensuring efficient and reliable delivery of
+              cutting-edge solutions.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="./images/image.jpg"
+              class="img-fluid rounded-circle"
+              alt="Shubham Kandpal"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-light py-5">
+      <div class="container">
+        <div class="text-center">
+          <h2>Projects</h2>
+          <p class="lead">Some of my recent works</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img
+                src="./images/mapty-app-project.png"
+                class="card-img-top"
+                alt="Mapty App"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mapty App</h5>
+                <p class="card-text">
+                  Project to mark workouts on world map, used JavaScript's OOPs.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img
+                src="images/basic-ecommerce-website.png"
+                class="card-img-top"
+                alt="Ecommerce Website"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ecommerce Website</h5>
+                <p class="card-text">
+                  Attractive UI, login, using HTML, CSS, Bootstrap, JS form
+                  validation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="text-center">
+          <h2>Contact Me</h2>
+          <p class="lead">Get in touch for collaboration or inquiries</p>
+        </div>
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="3"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <div class="container">
+        <p class="mb-0">&copy; 2024 Shubham Kandpal. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
