@@ -98,7 +98,7 @@ img {
     color: var(--color-brand) !important;
 }
 
-.navbar .nav-link:active {
+.navbar .nav-link.active {
     color: var(--color-brand);
 }
 

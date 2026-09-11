@@ -1,1 +1,5 @@
 unused-files
+src/js/script.js
+node_modules
+test-results
+playwright-report
