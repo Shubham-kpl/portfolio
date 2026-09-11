@@ -1,5 +1,6 @@
 unused-files
-src/js/script.js
+src/js
 node_modules
 test-results
 playwright-report
+.claude
