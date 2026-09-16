@@ -17,6 +17,7 @@ const MIME_TYPES = {
   ".svg": "image/svg+xml",
   ".ico": "image/x-icon",
   ".ttf": "font/ttf",
+  ".woff2": "font/woff2"
 };
 
 const server = createServer((req, res) => {
