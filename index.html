@@ -7,16 +7,14 @@
     <link rel="icon" type="image/x-icon" href="./src/images/favicon.png" />
 
     <!-- Bootstrap - Replacing CDN URL with local reference -->
-    <link
-      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Font Awesome -->
     <link
-      href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+      href="./vendor/fontawesome/css/fontawesome.min.css"
       rel="stylesheet"
     />
+    <link href="./vendor/fontawesome/css/brands.min.css" rel="stylesheet" />
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./src/css/style.css" />
@@ -34,9 +32,7 @@
           href="#"
           data-testid="brand-link"
         >
-          <span
-            class="h3 fw-bold d-block d-lg-none"
-            data-testid="brand-name"
+          <span class="h3 fw-bold d-block d-lg-none" data-testid="brand-name"
             >Shubham Kandpal</span
           >
           <img
@@ -82,26 +78,17 @@
               >
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#skills"
-                data-testid="item-skills"
+              <a class="nav-link" href="#skills" data-testid="item-skills"
                 >Skills</a
               >
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#projects"
-                data-testid="item-projects"
+              <a class="nav-link" href="#projects" data-testid="item-projects"
                 >Projects</a
               >
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#contact"
-                data-testid="item-contact"
+              <a class="nav-link" href="#contact" data-testid="item-contact"
                 >Contact</a
               >
             </li>
@@ -383,9 +370,7 @@
                   </div>
                   <div class="card-custom-content p-4">
                     <h4 data-testid="name">To Do App</h4>
-                    <p data-testid="description">
-                      To Do App made in React
-                    </p>
+                    <p data-testid="description">To Do App made in React</p>
                     <a
                       href="#projects"
                       class="link-custom"
@@ -410,9 +395,7 @@
                     />
                   </div>
                   <div class="card-custom-content p-4">
-                    <h4 data-testid="name">
-                      Ecommerce Website
-                    </h4>
+                    <h4 data-testid="name">Ecommerce Website</h4>
                     <p data-testid="description">
                       Ecommerce website made in HTML, CSS and JavaScript
                     </p>
@@ -536,6 +519,6 @@
     </div>
 
     <!-- Bootstrap -->
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
