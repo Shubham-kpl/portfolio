@@ -6,12 +6,13 @@ export class SkillsSection {
 
     this.skills = {};
     for (const skill of skills) {
+      const card = this.skillsSection.getByTestId(skill);
       this.skills[skill] = {
-        card: page.getByTestId(`skills-item-${skill}`),
-        icon: page.getByTestId(`skills-item-${skill}-icon`),
-        name: page.getByTestId(`skills-item-${skill}-name`),
-        description: page.getByTestId(`skills-item-${skill}-description`),
-        readMore: page.getByTestId(`skills-item-${skill}-read-more`),
+        card,
+        icon: card.getByTestId("icon"),
+        name: card.getByTestId("name"),
+        description: card.getByTestId("description"),
+        readMore: card.getByTestId("read-more"),
       };
     }
   }

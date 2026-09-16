@@ -1,15 +1,17 @@
 export class NavSection {
   constructor(page) {
     this.navbarSection = page.getByTestId("navbar-section");
-    this.navbarBrandLink = page.getByTestId("navbar-brand-link");
-    this.navbarBrandName = page.getByTestId("navbar-brand-name");
-    this.navbarToggleButton = page.getByTestId("navbar-toggle-button");
-    this.navItemsSection = page.getByTestId("navbar-items-section");
-    this.navItemsList = page.getByTestId("navbar-items-list");
-    this.navItemHero = page.getByTestId("navbar-item-hero");
-    this.navItemAbout = page.getByTestId("navbar-item-about");
-    this.navItemSkills = page.getByTestId("navbar-item-skills");
-    this.navItemProjects = page.getByTestId("navbar-item-projects");
-    this.navItemContact = page.getByTestId("navbar-item-contact");
+    this.navbarContainer = this.navbarSection.getByTestId("navbar-container");
+    this.navbarBrandLink = this.navbarContainer.getByTestId("brand-link");
+    this.navbarBrandName = this.navbarBrandLink.getByTestId("brand-name");
+    this.navbarToggleButton =
+      this.navbarContainer.getByTestId("toggle-button");
+    this.navItemsSection = this.navbarContainer.getByTestId("items-section");
+    this.navItemsList = this.navItemsSection.getByTestId("items-list");
+    this.navItemHero = this.navItemsList.getByTestId("item-hero");
+    this.navItemAbout = this.navItemsList.getByTestId("item-about");
+    this.navItemSkills = this.navItemsList.getByTestId("item-skills");
+    this.navItemProjects = this.navItemsList.getByTestId("item-projects");
+    this.navItemContact = this.navItemsList.getByTestId("item-contact");
   }
 }

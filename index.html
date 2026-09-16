@@ -28,15 +28,15 @@
       class="navbar navbar-expand-lg navbar-dark fixed-top"
       data-testid="navbar-section"
     >
-      <div class="container flex-lg-column">
+      <div class="container flex-lg-column" data-testid="navbar-container">
         <a
           class="navbar-brand mx-lg-auto mb-lg-4"
           href="#"
-          data-testid="navbar-brand-link"
+          data-testid="brand-link"
         >
           <span
             class="h3 fw-bold d-block d-lg-none"
-            data-testid="navbar-brand-name"
+            data-testid="brand-name"
             >Shubham Kandpal</span
           >
           <img
@@ -54,30 +54,30 @@
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          data-testid="navbar-toggle-button"
+          data-testid="toggle-button"
         >
-          <span class="navbar-toggle-icon"></span>
+          <span class="toggle-icon"></span>
         </button>
         <div
           class="collapse navbar-collapse"
           id="navbarNav"
-          data-testid="navbar-items-section"
+          data-testid="items-section"
         >
           <ul
             class="navbar-nav ms-auto flex-lg-column text-lg-center"
-            data-testid="navbar-items-list"
+            data-testid="items-list"
           >
             <li class="nav-item">
               <a
                 class="nav-link active"
                 aria-current="page"
                 href="#home"
-                data-testid="navbar-item-hero"
+                data-testid="item-hero"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about" data-testid="navbar-item-about"
+              <a class="nav-link" href="#about" data-testid="item-about"
                 >About</a
               >
             </li>
@@ -85,7 +85,7 @@
               <a
                 class="nav-link"
                 href="#skills"
-                data-testid="navbar-item-skills"
+                data-testid="item-skills"
                 >Skills</a
               >
             </li>
@@ -93,7 +93,7 @@
               <a
                 class="nav-link"
                 href="#projects"
-                data-testid="navbar-item-projects"
+                data-testid="item-projects"
                 >Projects</a
               >
             </li>
@@ -101,7 +101,7 @@
               <a
                 class="nav-link"
                 href="#contact"
-                data-testid="navbar-item-contact"
+                data-testid="item-contact"
                 >Contact</a
               >
             </li>
@@ -117,21 +117,21 @@
         <div class="container" data-testid="hero-container">
           <div class="row">
             <div class="col-lg-8">
-              <h1 class="display-4 fw-bold" data-testid="hero-heading">
+              <h1 class="display-4 fw-bold" data-testid="heading">
                 I'M A <span class="text-brand"> WEB DEVELOPER </span>
                 FROM HALDWANI, INDIA
               </h1>
-              <p class="lead mt-2 mb-4" data-testid="hero-subheading">
+              <p class="lead mt-2 mb-4" data-testid="subheading">
                 Web Developer and competitive programmer
               </p>
               <div>
                 <a
                   href="#projects"
                   class="btn btn-brand me-3"
-                  data-testid="hero-projects-button"
+                  data-testid="projects-button"
                   >Projects</a
                 >
-                <a href="#" class="link-custom" data-testid="hero-contact-me"
+                <a href="#" class="link-custom" data-testid="contact-me"
                   >Contact me: +91-9193560650</a
                 >
               </div>
@@ -152,19 +152,17 @@
               <h6 class="text-brand" data-testid="about-heading">ABOUT ME</h6>
             </div>
           </div>
-          <div class="row gy-12 mb-5" data-testid="about-job-experience">
-            <h1 data-testid="about-job-experience-heading">Job Experience</h1>
+          <div class="row gy-12 mb-5" data-testid="job-experience">
+            <h1 data-testid="title">Job Experience</h1>
             <div class="col-lg-12">
               <div class="row gy-4">
-                <div class="col-12" data-testid="about-job-experience-f2p">
+                <div class="col-12" data-testid="f2p">
                   <div class="bg-base p-4 pe-5 rounded-3 shadow-effect">
-                    <h4 data-testid="about-job-experience-f2p-heading">
-                      Quality Analyst
-                    </h4>
+                    <h4 data-testid="heading">Quality Analyst</h4>
                     <div class="row">
                       <p
                         class="text-brand mb-3 col-11"
-                        data-testid="about-job-experience-f2p-subheading"
+                        data-testid="subheading"
                       >
                         FanToPark Sports Pvt. Ltd. (2025-Present)
                       </p>
@@ -174,72 +172,55 @@
               </div>
             </div>
           </div>
-          <div class="row gy-12" data-testid="about-education">
-            <h1 data-testid="about-education-heading">Education</h1>
+          <div class="row gy-12" data-testid="education">
+            <h1 data-testid="title">Education</h1>
             <div class="col-lg-12">
               <div class="row gy-4">
-                <div class="col-12" data-testid="about-education-btech">
+                <div class="col-12" data-testid="btech">
                   <div class="bg-base p-4 pe-5 rounded-3 shadow-effect">
-                    <h4 data-testid="about-education-btech-heading">
-                      Bachelor of Technology
-                    </h4>
+                    <h4 data-testid="heading">Bachelor of Technology</h4>
                     <div class="row">
                       <p
                         class="text-brand mb-3 col-11"
-                        data-testid="about-education-btech-subheading"
+                        data-testid="subheading"
                       >
                         College of Technology, Pantnagar (2021 - 2025)
                       </p>
-                      <span
-                        class="col-1 grades"
-                        data-testid="about-education-btech-grade"
+                      <span class="col-1 grades" data-testid="grade"
                         >8.165</span
                       >
                     </div>
-                    <p
-                      class="mb-0"
-                      data-testid="about-education-btech-description"
-                    >
+                    <p class="mb-0" data-testid="description">
                       Fundamentals of computer science like OS, DBMS, CN, TOC,
                       Data Structures, Algorithms
                     </p>
                   </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12" data-testid="inter">
                   <div class="bg-base p-4 pe-5 rounded-3 shadow-effect">
-                    <h4 data-testid="about-education-inter-heading">
-                      Intermediate
-                    </h4>
+                    <h4 data-testid="heading">Intermediate</h4>
                     <div class="row">
                       <p
                         class="text-brand mb-3 col-11"
-                        data-testid="about-education-inter-subheading"
+                        data-testid="subheading"
                       >
                         Kendriya Vidyalaya, Pithoragarh (2021)
                       </p>
-                      <span
-                        class="col-1 grades"
-                        data-testid="about-education-inter-grade"
-                        >96%</span
-                      >
+                      <span class="col-1 grades" data-testid="grade">96%</span>
                     </div>
                   </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12" data-testid="matric">
                   <div class="bg-base p-4 pe-5 rounded-3 shadow-effect">
-                    <h4 data-testid="about-education-matric-heading">
-                      Highschool
-                    </h4>
+                    <h4 data-testid="heading">Highschool</h4>
                     <div class="row">
                       <p
                         class="text-brand mb-3 col-11"
-                        data-testid="about-education-matric-subheading"
+                        data-testid="subheading"
                       >
                         The Asian Academy, Pithoragarh (2019)
                       </p>
-                      <span
-                        class="col-1 grades"
-                        data-testid="about-education-matric-grade"
+                      <span class="col-1 grades" data-testid="grade"
                         >90.8%</span
                       >
                     </div>
@@ -265,152 +246,104 @@
             </div>
           </div>
           <div class="row pb-4">
-            <div class="col-md-4 mb-4" data-testid="skills-item-html">
+            <div class="col-md-4 mb-4" data-testid="html">
               <div
                 class="service p-4 cursor-pointer bg-base rounded-3 shadow-effect"
               >
-                <div
-                  class="iconbox rounded-3"
-                  data-testid="skills-item-html-icon"
-                >
+                <div class="iconbox rounded-3" data-testid="icon">
                   <i class="fa-brands fa-html5"></i>
                 </div>
-                <h5 class="mt-4 mb-2" data-testid="skills-item-html-name">
-                  HTML
-                </h5>
-                <p data-testid="skills-item-html-description">
+                <h5 class="mt-4 mb-2" data-testid="name">HTML</h5>
+                <p data-testid="description">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Corporis, optio.
                 </p>
-                <a
-                  href="#skills"
-                  class="link-custom"
-                  data-testid="skills-item-html-read-more"
+                <a href="#skills" class="link-custom" data-testid="read-more"
                   >Read More</a
                 >
               </div>
             </div>
-            <div class="col-md-4 mb-4" data-testid="skills-item-css">
+            <div class="col-md-4 mb-4" data-testid="css">
               <div
                 class="service p-4 cursor-pointer bg-base rounded-3 shadow-effect"
               >
-                <div
-                  class="iconbox rounded-3"
-                  data-testid="skills-item-css-icon"
-                >
+                <div class="iconbox rounded-3" data-testid="icon">
                   <i class="fa-brands fa-css3"></i>
                 </div>
-                <h5 class="mt-4 mb-2" data-testid="skills-item-css-name">
-                  CSS
-                </h5>
-                <p data-testid="skills-item-css-description">
+                <h5 class="mt-4 mb-2" data-testid="name">CSS</h5>
+                <p data-testid="description">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Corporis, optio.
                 </p>
-                <a
-                  href="#skills"
-                  class="link-custom"
-                  data-testid="skills-item-css-read-more"
+                <a href="#skills" class="link-custom" data-testid="read-more"
                   >Read More</a
                 >
               </div>
             </div>
-            <div class="col-md-4 mb-4" data-testid="skills-item-js">
+            <div class="col-md-4 mb-4" data-testid="js">
               <div
                 class="service p-4 cursor-pointer bg-base rounded-3 shadow-effect"
               >
                 <div class="iconbox rounded-3">
-                  <i
-                    class="fa-brands fa-js"
-                    data-testid="skills-item-js-icon"
-                  ></i>
+                  <i class="fa-brands fa-js" data-testid="icon"></i>
                 </div>
-                <h5 class="mt-4 mb-2" data-testid="skills-item-js-name">
-                  Javascript
-                </h5>
-                <p data-testid="skills-item-js-description">
+                <h5 class="mt-4 mb-2" data-testid="name">Javascript</h5>
+                <p data-testid="description">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Corporis, optio.
                 </p>
-                <a
-                  href="#skills"
-                  class="link-custom"
-                  data-testid="skills-item-js-read-more"
+                <a href="#skills" class="link-custom" data-testid="read-more"
                   >Read More</a
                 >
               </div>
             </div>
-            <div class="col-md-4 mb-4" data-testid="skills-item-react">
+            <div class="col-md-4 mb-4" data-testid="react">
               <div
                 class="service p-4 cursor-pointer bg-base rounded-3 shadow-effect"
               >
-                <div
-                  class="iconbox rounded-3"
-                  data-testid="skills-item-react-icon"
-                >
+                <div class="iconbox rounded-3" data-testid="icon">
                   <i class="fa-brands fa-react"></i>
                 </div>
-                <h5 class="mt-4 mb-2" data-testid="skills-item-react-name">
-                  React JS
-                </h5>
-                <p data-testid="skills-item-react-description">
+                <h5 class="mt-4 mb-2" data-testid="name">React JS</h5>
+                <p data-testid="description">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Corporis, optio.
                 </p>
-                <a
-                  href="#skills"
-                  class="link-custom"
-                  data-testid="skills-item-react-read-more"
+                <a href="#skills" class="link-custom" data-testid="read-more"
                   >Read More</a
                 >
               </div>
             </div>
-            <div class="col-md-4 mb-4" data-testid="skills-item-node">
+            <div class="col-md-4 mb-4" data-testid="node">
               <div
                 class="service p-4 cursor-pointer bg-base rounded-3 shadow-effect"
               >
-                <div
-                  class="iconbox rounded-3"
-                  data-testid="skills-item-node-icon"
-                >
+                <div class="iconbox rounded-3" data-testid="icon">
                   <i class="fa-brands fa-node"></i>
                 </div>
-                <h5 class="mt-4 mb-2" data-testid="skills-item-node-name">
-                  Node JS
-                </h5>
-                <p data-testid="skills-item-node-description">
+                <h5 class="mt-4 mb-2" data-testid="name">Node JS</h5>
+                <p data-testid="description">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Corporis, optio.
                 </p>
-                <a
-                  href="#skills"
-                  class="link-custom"
-                  data-testid="skills-item-node-read-more"
+                <a href="#skills" class="link-custom" data-testid="read-more"
                   >Read More</a
                 >
               </div>
             </div>
-            <div class="col-md-4 mb-4" data-testid="skills-item-bootstrap">
+            <div class="col-md-4 mb-4" data-testid="bootstrap">
               <div
                 class="service p-4 cursor-pointer bg-base rounded-3 shadow-effect"
               >
-                <div
-                  class="iconbox rounded-3"
-                  data-testid="skills-item-bootstrap-icon"
-                >
+                <div class="iconbox rounded-3" data-testid="icon">
                   <i class="fa-brands fa-bootstrap"></i>
                 </div>
-                <h5 class="mt-4 mb-2" data-testid="skills-item-bootstrap-name">
-                  Bootstrap
-                </h5>
-                <p data-testid="skills-item-bootstrap-description">
+                <h5 class="mt-4 mb-2" data-testid="name">Bootstrap</h5>
+                <p data-testid="description">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Corporis, optio.
                 </p>
-                <a
-                  href="#skills"
-                  class="link-custom"
-                  data-testid="skills-item-bootstrap-read-more"
+                <a href="#skills" class="link-custom" data-testid="read-more"
                   >Read More</a
                 >
               </div>
@@ -435,11 +368,11 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6 gy-4" data-testid="projects-item-todo">
+            <div class="col-md-6 gy-4" data-testid="todo">
               <a
                 href="https://todolist-pi-umber.vercel.app/"
                 target="_blank"
-                data-testid="projects-item-todo-link"
+                data-testid="link"
               >
                 <div class="card-custom rounded-3 bg-base shadow-effect">
                   <div class="card-custom-image">
@@ -449,25 +382,25 @@
                     />
                   </div>
                   <div class="card-custom-content p-4">
-                    <h4 data-testid="projects-item-todo-name">To Do App</h4>
-                    <p data-testid="projects-item-todo-description">
+                    <h4 data-testid="name">To Do App</h4>
+                    <p data-testid="description">
                       To Do App made in React
                     </p>
                     <a
                       href="#projects"
                       class="link-custom"
-                      data-testid="projects-item-todo-read-more"
+                      data-testid="read-more"
                       >Read More</a
                     >
                   </div>
                 </div>
               </a>
             </div>
-            <div class="col-md-6 gy-4" data-testid="projects-item-ecom">
+            <div class="col-md-6 gy-4" data-testid="ecom">
               <a
                 href="https://basic-ecommerce-website.vercel.app/"
                 target="_blank"
-                data-testid="projects-item-ecom-link"
+                data-testid="link"
               >
                 <div class="card-custom rounded-3 bg-base shadow-effect">
                   <div class="card-custom-image">
@@ -477,16 +410,16 @@
                     />
                   </div>
                   <div class="card-custom-content p-4">
-                    <h4 data-testid="projects-item-ecom-name">
+                    <h4 data-testid="name">
                       Ecommerce Website
                     </h4>
-                    <p data-testid="projects-item-ecom-description">
+                    <p data-testid="description">
                       Ecommerce website made in HTML, CSS and JavaScript
                     </p>
                     <a
                       href="#projects"
                       class="link-custom"
-                      data-testid="projects-item-ecom-read-more"
+                      data-testid="read-more"
                       >Read More</a
                     >
                   </div>

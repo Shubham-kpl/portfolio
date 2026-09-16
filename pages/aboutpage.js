@@ -1,58 +1,46 @@
 export class AboutSection {
   constructor(page) {
     this.aboutSection = page.getByTestId("about-section");
-    this.aboutContainer = page.getByTestId("about-container");
-    this.aboutHeading = page.getByTestId("about-heading");
+    this.aboutContainer = this.aboutSection.getByTestId("about-container");
+    this.aboutHeading = this.aboutContainer.getByTestId("about-heading");
 
-    this.aboutJobExperience = page.getByTestId("about-job-experience");
-    this.aboutJobExperienceHeading = page.getByTestId(
-      "about-job-experience-heading",
-    );
-    this.aboutJobExperienceF2p = page.getByTestId("about-job-experience-f2p");
-    this.aboutJobExperienceF2pHeading = page.getByTestId(
-      "about-job-experience-f2p-heading",
-    );
-    this.aboutJobExperienceF2pSubheading = page.getByTestId(
-      "about-job-experience-f2p-subheading",
-    );
+    this.aboutJobExperience =
+      this.aboutContainer.getByTestId("job-experience");
+    this.aboutJobExperienceHeading =
+      this.aboutJobExperience.getByTestId("title");
+    this.aboutJobExperienceF2p = this.aboutJobExperience.getByTestId("f2p");
+    this.aboutJobExperienceF2pHeading =
+      this.aboutJobExperienceF2p.getByTestId("heading");
+    this.aboutJobExperienceF2pSubheading =
+      this.aboutJobExperienceF2p.getByTestId("subheading");
 
-    this.aboutEducation = page.getByTestId("about-education");
-    this.aboutEducationHeading = page.getByTestId("about-education-heading");
+    this.aboutEducation = this.aboutContainer.getByTestId("education");
+    this.aboutEducationHeading = this.aboutEducation.getByTestId("title");
 
-    this.aboutEducationBtech = page.getByTestId("about-education-btech");
-    this.aboutEducationBtechHeading = page.getByTestId(
-      "about-education-btech-heading",
-    );
-    this.aboutEducationBtechSubheading = page.getByTestId(
-      "about-education-btech-subheading",
-    );
-    this.aboutEducationBtechGrade = page.getByTestId(
-      "about-education-btech-grade",
-    );
-    this.aboutEducationBtechDescription = page.getByTestId(
-      "about-education-btech-description",
-    );
+    this.aboutEducationBtech = this.aboutEducation.getByTestId("btech");
+    this.aboutEducationBtechHeading =
+      this.aboutEducationBtech.getByTestId("heading");
+    this.aboutEducationBtechSubheading =
+      this.aboutEducationBtech.getByTestId("subheading");
+    this.aboutEducationBtechGrade =
+      this.aboutEducationBtech.getByTestId("grade");
+    this.aboutEducationBtechDescription =
+      this.aboutEducationBtech.getByTestId("description");
 
-    this.aboutEducationInter = page.getByTestId("about-education-inter");
-    this.aboutEducationInterHeading = page.getByTestId(
-      "about-education-inter-heading",
-    );
-    this.aboutEducationInterSubheading = page.getByTestId(
-      "about-education-inter-subheading",
-    );
-    this.aboutEducationInterGrade = page.getByTestId(
-      "about-education-inter-grade",
-    );
+    this.aboutEducationInter = this.aboutEducation.getByTestId("inter");
+    this.aboutEducationInterHeading =
+      this.aboutEducationInter.getByTestId("heading");
+    this.aboutEducationInterSubheading =
+      this.aboutEducationInter.getByTestId("subheading");
+    this.aboutEducationInterGrade =
+      this.aboutEducationInter.getByTestId("grade");
 
-    this.aboutEducationMatric = page.getByTestId("about-education-matric");
-    this.aboutEducationMatricHeading = page.getByTestId(
-      "about-education-matric-heading",
-    );
-    this.aboutEducationMatricSubheading = page.getByTestId(
-      "about-education-matric-subheading",
-    );
-    this.aboutEducationMatricGrade = page.getByTestId(
-      "about-education-matric-grade",
-    );
+    this.aboutEducationMatric = this.aboutEducation.getByTestId("matric");
+    this.aboutEducationMatricHeading =
+      this.aboutEducationMatric.getByTestId("heading");
+    this.aboutEducationMatricSubheading =
+      this.aboutEducationMatric.getByTestId("subheading");
+    this.aboutEducationMatricGrade =
+      this.aboutEducationMatric.getByTestId("grade");
   }
 }
