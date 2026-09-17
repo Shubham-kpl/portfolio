@@ -1,20 +1,25 @@
 export class ProjectsSection {
   constructor(page) {
     this.projectsSection = page.getByTestId("projects-section");
-    this.projectsContainer = page.getByTestId("projects-container");
-    this.projectsSubheading = page.getByTestId("projects-subheading");
-    this.projectsHeading = page.getByTestId("projects-heading");
+    this.projectsContainer =
+      this.projectsSection.getByTestId("projects-container");
+    this.projectsSubheading = this.projectsContainer.getByTestId(
+      "projects-subheading",
+    );
+    this.projectsHeading =
+      this.projectsContainer.getByTestId("projects-heading");
 
     const projects = ["todo", "ecom"];
 
     this.projects = {};
     for (const project of projects) {
+      const card = this.projectsSection.getByTestId(project);
       this.projects[project] = {
-        card: page.getByTestId(`projects-item-${project}`),
-        link: page.getByTestId(`projects-item-${project}-link`),
-        name: page.getByTestId(`projects-item-${project}-name`),
-        description: page.getByTestId(`projects-item-${project}-description`),
-        readMore: page.getByTestId(`projects-item-${project}-read-more`),
+        card,
+        link: card.getByTestId("link"),
+        name: card.getByTestId("name"),
+        description: card.getByTestId("description"),
+        readMore: card.getByTestId("read-more"),
       };
     }
   }
